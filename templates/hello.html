@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+       <h1> Sign Up</h1>
+       <form action="/hello" method='post'>
+            <label>Username</label>
+                <input type="text" name="username" value="{{ username }}" required/>
+                <font style="color:red" pattern=""><label='error'>{{ uerror }}</font>
+            <br>
+            <label>Password</label>
+                <input type="password" name="pwd1" required/>
+                <font style="color:red" pattern=""><label='error'>{{ perror }}</font>                
+            <br>
+            <label>Verify Password</label>
+                <input type="password" name="pwd2" required/> 
+                <font style="color:red" pattern=""><label='error'>{{ perror2 }}</font>
+            <br>
+            <label>Email (optional)</label>
+                <input type="text" name="email" value="{{ email }}"/> 
+                <font style="color:red" pattern=""><label='error'>{{ eerror }}</font>
+            <br>
+            <input type="submit" value="Submit"/>
+       </form>
+   </body>                  
+</html>
